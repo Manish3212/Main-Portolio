@@ -55,15 +55,17 @@ return(
   </ol>
   <div class="carousel-inner">
 
+ 
+
     <div class="carousel-item active">
-    <a href='https://weather-project-99dx.onrender.com/' target="_blank" rel="noopener noreferrer">
-      <img class="d-block w-100" src={weatherimg} alt="First slide"/>
+    <a href='https://manish3212.github.io/tindog-project.github.io/' target="_blank" rel="noopener noreferrer">
+      <img class="d-block w-100" src={web1} alt="first slide"/>
     </a>
     </div>
 
     <div class="carousel-item">
-    <a href='https://manish3212.github.io/tindog-project.github.io/' target="_blank" rel="noopener noreferrer">
-      <img class="d-block w-100" src={web1} alt="Second slide"/>
+    <a href='https://weather-project-99dx.onrender.com/' target="_blank" rel="noopener noreferrer">
+      <img class="d-block w-100" src={weatherimg} alt="second slide"/>
     </a>
     </div>
 
@@ -73,11 +75,11 @@ return(
     </a>
     </div>
 
-  <div className='carousel-item'>
+  {/* <div className='carousel-item'>
   <a href='https://manish3212.github.io/relaxing-website.github.io/' target="_blank" rel="noopener noreferrer">
     <img class="d-block w-100" src={web2} alt="fourth slide"/>
   </a>
-  </div>
+  </div> */}
 
 </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

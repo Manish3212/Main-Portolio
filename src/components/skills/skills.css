@@ -66,14 +66,17 @@
     left: 30%; 
     filter: blur(192px);
 }
+/* .skill-div:hover{
+    transform: scale(1.2);
+} */
 
 @media  screen and (max-width:420px){
     .skill-div{
         display: flex;
         /* grid-template-columns: 2; */
         flex-direction: column;
-        height: 175rem;
-        top: 4rem;
+        height: auto;
+        /* top: 4rem; */
         
     }
     .skills{

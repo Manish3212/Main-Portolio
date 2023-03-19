@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Navbar.css"
+import {motion} from "framer-motion";
+import { type } from 'os';
 
 function Navbar() {
   return (
@@ -11,10 +13,31 @@ function Navbar() {
         <div className='n-right'> 
         <div className='n-list'>
             <ul>
-                <li><a href='#skills'>Skills</a></li>
-                <li><a href='#projects'>Projects</a></li>
-                <li><a href='#find-me'>Find me</a></li>
-                <li><a href='#contact'>Contact</a></li>
+                <motion.li
+               whileHover={{scale:1.6}}
+               whileTap={{scale:0.8}}
+               transition={{type:"spring",stiffness:400,damping:10}}
+
+                ><a  className='a'href='#skills'>Skills</a></motion.li>
+
+                <motion.li
+                whileHover={{scale:1.6}}
+               whileTap={{scale:0.8}}
+               transition={{type:"spring",stiffness:400,damping:10}}
+               ><a className='a' href='#projects'>Projects</a></motion.li>
+
+                <motion.li
+                whileHover={{scale:1.6}}
+               whileTap={{scale:0.8}}
+               transition={{type:"spring",stiffness:400,damping:10}}>
+                <a
+                 className='a' href='#find-me'>Find me</a></motion.li>
+
+                <motion.li
+                whileHover={{scale:1.6}}
+               whileTap={{scale:0.8}}
+               transition={{type:"spring",stiffness:400,damping:10}}
+               ><a className='a' href='#contact'>Contact</a></motion.li>
             </ul>
         </div>
 

@@ -63,7 +63,7 @@
     margin: 0rem 5rem 0rem 5rem;
 }
 .form>:nth-child(4){
-    margin: 2rem 10rem 0rem 10rem;
+    margin: auto 10rem auto;
 }
 @media  screen and (max-width:480px){
     .contact-form{
@@ -74,3 +74,10 @@
     .cf-right{
      margin-left: -3rem;   
     }}
+
+
+    @media  screen and (max-width:705px){
+        .contact-form{
+            flex-direction: column;
+        }
+    }

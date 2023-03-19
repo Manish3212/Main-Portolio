@@ -12,25 +12,42 @@ import nodejs from "../../img/logos/nodejs.png"
 import react from "../../img/logos/react.png"
 import tailwind from "../../img/logos/tailwind.png"
 import api from "../../img/logos/api.png"
-import hacker from "../../img/logos/hacker.png"
+import mongodb from "../../img/logos/mongodb.png"
+import mongoose from "../../img/logos/Mongoose.png"
+
+// import hacker from "../../img/logos/hacker.png"
 import {motion} from 'framer-motion';
 
 
 function skills() {
-  const transition={duration:2,type:'spring'};
+  const transition={duration:1,type:'spring'};
   return (
-    <div className='skill-div' id='skills'>
+    <motion.div
+    // initial={{opacity:0.6}}
+    // onhover={{opacity:1}}
+    // animate={{
+    //   scale:[1,0.9,1,0.9,1]}}
+    // transition={{type:"spring", duration:2,damping:10}}
+     className='skill-div' id='skills'>
 
     <motion.div
-    
+    initial={{opacity:0}}
+    animate={{
+      opacity:1,
+      scale:[1,1.6,1.3,1.6,1,1.6,1.3,1.6],
+    opacity:1}}
+    transition={{
+      duration:2,
+      ease:"easeInOut" }}
+
      className='heading'>
-       <motion.h1>My Skills</motion.h1>
+       <h1>My Skills</h1>
      </motion.div>
 
 
     <motion.div
-    initial={{left:'-20%'}}
-     whileInView={{left:'0%'}}
+    // initial={{left:'-10rem'}}
+    //  whileInView={{left:'0%'}}
     transition={transition}
      className='skills'>
     {/* {cards} */}
@@ -44,14 +61,17 @@ function skills() {
     src={css}
     skill= "CSS3"
     />
+
+     <Card 
+    src={bootstrap}
+    skill= "Bootstrap"
+    />
+
     <Card 
     src={javascript}
     skill= "Javascript"
     />
-    <Card 
-    src={bootstrap}
-    skill= "Bootstrap"
-    />
+   
     <Card 
     src={jquery}
     skill= "Jquery"
@@ -73,13 +93,23 @@ function skills() {
     src={react}
     skill= "React"
     />
-    <Card 
+    {/* <Card 
     src={hacker}
     skill= "Ethical Hacker "
-    />
+    /> */}
     <Card 
     src={api}
     skill= "API"
+    />
+
+    <Card 
+    src={mongodb}
+    skill= "Mongodb"
+    />
+
+    <Card 
+    src={mongoose}
+    skill= "Mongoose"
     />
 
    <div className='b1'></div>
@@ -89,7 +119,7 @@ function skills() {
     </motion.div>
     
 
-    </div>
+    </motion.div>
   )
 }
 
